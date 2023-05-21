@@ -11,7 +11,6 @@ const MoviePopular = () => {
 
   const fetchMovies = async (page) => {
     try {
-      const apiKey = '6822a884c17763ff29352376024c7644';
       const response = await fetch(
         `https://api.themoviedb.org/3/movie/popular?api_key=${apiKey}`
       );
