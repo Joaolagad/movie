@@ -23,7 +23,6 @@ const App = () => {
   const navigate = useNavigate();
 
   const getMovieRequest = async (page) => {
-    const apiKey = "6822a884c17763ff29352376024c7644";
     let url = `https://api.themoviedb.org/3/search/movie?api_key=${apiKey}&query=${searchValue}`;
 
     if (selectedGenre) {
@@ -40,7 +39,6 @@ const App = () => {
   };
 
   const getPopularMovies = async (page) => {
-    const apiKey = "6822a884c17763ff29352376024c7644";
     const url = `https://api.themoviedb.org/3/movie/popular?api_key=${apiKey}&page=${page}`;
   
     try {
@@ -60,7 +58,6 @@ const App = () => {
   };
 
   const getGenres = async () => {
-    const apikey = "6822a884c17763ff29352376024c7644";
     let genresurl = `https://api.themoviedb.org/3/genre/movie/list?api_key=${apikey}`;
 
     const response = await fetch(genresurl);
