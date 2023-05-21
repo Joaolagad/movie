@@ -9,9 +9,6 @@ import Pagination from './Components/Pagination';
 import { Auth0Provider, useAuth0 } from '@auth0/auth0-react';
 import { ProtectedRoute } from './Pages/Protecte';
 const Doutes = () => {
-  const clientId = "5tgjeWtCxWg3gPGCcR97Z6EEERiw22Ke";
-  const domain = "dev-hvifktsdyoi83qx3.us.auth0.com";
-
   const auth0Config = {
     domain: domain,
     clientId: clientId,
