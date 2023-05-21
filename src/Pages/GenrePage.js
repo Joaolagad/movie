@@ -12,7 +12,6 @@ const GenrePage = () => {
   const [genreName, setGenreName] = useState('')
   useEffect(() => {
     const fetchMoviesByGenre = async (genrepage) => {
-      const apiKey = "6822a884c17763ff29352376024c7644";
       const apiUrl = `https://api.themoviedb.org/3/discover/movie?api_key=${apiKey}&with_genres=${genreId}&page=${genrepage}`;
   
       try {
@@ -41,7 +40,6 @@ const GenrePage = () => {
 
     useEffect(() => {
       const fetchGenreName = async () => {
-        const apiKey = "6822a884c17763ff29352376024c7644";
         const apiUrl = `https://api.themoviedb.org/3/genre/movie/list?api_key=${apiKey}`;
 
         try {
