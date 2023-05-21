@@ -1,0 +1,19 @@
+.log {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .login {
+    color: white;
+  }
+
+.username {
+    color: white;
+
+}
+
+.password {
+    color: white
+}

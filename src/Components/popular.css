@@ -1,0 +1,17 @@
+.popular-movie-header {
+  color: white;
+  animation: fadeIn 1s;
+  font-weight: bold;
+  margin-left: -280%; 
+}
+
+
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

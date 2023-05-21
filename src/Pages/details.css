@@ -1,0 +1,17 @@
+.details-container {
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 10px;
+  }
+  
+  .details-container img {
+    width: 20;
+  }
+  
+  .details-container .content {
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+  }
+  
