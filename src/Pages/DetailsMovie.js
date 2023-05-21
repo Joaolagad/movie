@@ -12,18 +12,15 @@ const DetailsMovie = () => {
   useEffect(() => {
     const fetchMovieDetails = async () => {
       try {
-        const apikey = '6822a884c17763ff29352376024c7644';
         const url = `https://api.themoviedb.org/3/movie/${id}?api_key=${apikey}`;
         const response = await fetch(url);
         const movieData = await response.json();
         setSelectedMovie(movieData);
 
-        // Retrieve trailers
         const trailersUrl = `https://api.themoviedb.org/3/movie/${id}/videos?api_key=${apikey}`;
         const trailersResponse = await fetch(trailersUrl);
         const trailersData = await trailersResponse.json();
 
-        // Filter for official trailer
         const officialTrailerData = trailersData.results.find(
           (video) => video.type === 'Trailer' && video.site === 'YouTube'
         );
